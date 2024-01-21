@@ -1,0 +1,227 @@
+/* Force the footer to sit at the bottom of the page if the content is too short */
+html,
+body,
+.site-wrap {
+  margin: 0;
+  height: 100%;
+}
+
+.content-wrap {
+  min-height: 100%;
+  margin-bottom: -80px;
+}
+
+.content-wrap:after {
+  content: "";
+  display: block;
+}
+
+.tutorial {
+  padding: 0px 100px;
+}
+
+footer,
+.content-wrap:after {
+  height: 80px;
+}
+
+/* Style overrides */
+
+.banner h1 {
+  text-transform: none;
+}
+
+/* Page styling */
+body {
+  background: #3a3434;
+}
+
+#environment-banner {
+  display: none;
+  visibility: hidden;
+}
+
+.content-wrap {
+  background: #f9f9f9;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+footer {
+  display: block;
+  color: #fff;
+  background: #3a3434;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.banner {
+  text-align: center;
+  padding: 15px 10px;
+}
+.banner #banner-title {
+  color: #3a3434;
+  font-size: 2em;
+  text-transform: none;
+}
+
+.site-wrap {
+  position: relative;
+  left: 0;
+  -webkit-transition: left 0.2s ease-in-out;
+  -moz-transition: left 0.2s ease-in-out;
+  -ms-transition: left 0.2s ease-in-out;
+  -o-transition: left 0.2s ease-in-out;
+  transition: left 0.2s ease-in-out;
+}
+
+/* Style lists to look like native mobile list views */
+
+.listview,
+.cm-list {
+  background: #fff;
+  color: #3a3434;
+}
+
+.listview,
+.listview ul,
+.collapsible-menu,
+.collapsible-menu .cm-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.listview .listview-item,
+.cm-list .cm-list-item {
+  display: block;
+  min-height: 54px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.listview .listview-item:first-child {
+  border-top: 1px solid #000000;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.listview .listview-item {
+  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.listview .listview-item.lvi--header {
+  text-align: center;
+}
+
+.listview .listview-item a,
+.listview .listview-item.lvi--no-link,
+.cm-list .cm-list-item a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 18px 20px;
+}
+
+.listview .listview-item:not(.lvi--no-hover):hover,
+.cm-list .cm-list-item:hover {
+  background: #000000;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-transition: color 0.1s, background 0.1s;
+  -moz-transition: color 0.1s, background 0.1s;
+  -ms-transition: color 0.1s, background 0.1s;
+  -o-transition: color 0.1s, background 0.1s;
+  transition: color 0.1s, background 0.1s;
+}
+
+/* Dark varient anyone? */
+
+.listview.lv--dark,
+.cm-list.cm--dark {
+  background: #3a3434;
+  color: #fff;
+}
+
+.listview.lv--dark .listview-item a,
+.listview.lv--dark .listview-item.lvi--no-link,
+.cm-list.cm--dark .cm-list-item a {
+  color: white;
+}
+
+/* Collapsible */
+.collapsible-menu {
+  margin: 2px;
+  position: relative;
+}
+
+.collapsible-menu .cm-list {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 28px;
+  z-index: 99;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.collapsible-menu.cm--open .cm-list {
+  display: block;
+}
+
+.collapsible-menu .cm--heading {
+  display: block;
+  padding: 5px;
+  padding-right: 25px;
+  cursor: pointer;
+  float: right;
+  margin-bottom: 5px;
+}
+
+.collapsible-menu .cm--heading:after {
+  content: ">";
+  font: 17px "Consolas", monospace;
+  color: #333;
+  -webkit-transform: rotate(90deg) translateY(-10px);
+  -moz-transform: rotate(90deg) translateY(-10px);
+  -ms-transform: rotate(90deg) translateY(-10px);
+  -o-transform: rotate(90deg) translateY(-10px);
+  transform: rotate(90deg) translateY(-10px);
+  position: absolute;
+  pointer-events: none;
+}
+
+.collapsible-menu.cm--open .cm--heading:after {
+  content: "<";
+}
+
+.cm-list .cm-list-item,
+.cm-list .cm-list-item a {
+  min-height: 14px;
+}
+
+.cm-list .cm-list-item a {
+  padding: 8px 20px;
+}
+
+.cm-list .cm-list-item:first-child {
+  border-top: 1px solid #ffffff;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.cm-list .cm-list-item {
+  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}

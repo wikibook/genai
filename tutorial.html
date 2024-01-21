@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>생성형 AI 업무 혁신</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="site-wrap">
+      <div class="content-wrap">
+        <div class="body-content">
+          <div class="overlay"></div>
+          <div class="banner">
+            <h1 id="banner-title">생성형 AI 업무 혁신</h1>
+          </div>
+          <ul class="listview" style="clear: both">
+            <li class="listview-item">
+              <a href="./tutorial/01.html" target="_blank">DeepL 등록하기</a>
+            </li>
+            <li class="listview-item">
+              <a href="./tutorial/02.html" target="_blank"
+                >DeepL 구독 해지하기</a
+              >
+            </li>
+            <li class="listview-item">
+              <a href="./tutorial/03.html" target="_blank"
+                >웹 페이지에서 DeepL 사용하기</a
+              >
+            </li>
+            <li class="listview-item">
+              <a href="./tutorial/04.html" target="_blank"
+                >설치 프로그램(앱)으로 DeepL 사용하기</a
+              >
+            </li>
+            <li class="listview-item">
+              <a href="./tutorial/05.html" target="_blank"
+                >확장 프로그램으로 웹 페이지 번역하기</a
+              >
+            </li>
+            <li class="listview-item">
+              <a href="./tutorial/06.html" target="_blank"
+                >DeepL API 계정 등록하기</a
+              >
+            </li>
+            <li class="listview-item">
+              <a href="./tutorial/07.html" target="_blank"
+                >OpenAI 키 발급하기</a
+              >
+            </li>
+            <li class="listview-item">
+              <a href="./tutorial/08.html" target="_blank"
+                >GPT for Sheets and Docs 설치하기</a
+              >
+            </li>
+            <li class="listview-item">
+              <a href="./tutorial/09.html" target="_blank"
+                >GPT for Sheets에 API 키 등록하기</a
+              >
+            </li>
+            <li class="listview-item">
+              <a href="./tutorial/10.html" target="_blank"
+                >다른 번역 도구와 교차 검증하기</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <footer>
+        <p>Copyright © 2024 Wikibooks. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+  <script>
+    const urlParams = new URL(location.href).searchParams;
+    const page = urlParams.get("page");
+
+    if (page != "" && page != null) {
+      moveUrl = "tutorial/" + page + ".html";
+      window.location.href = moveUrl;
+    }
+  </script>
+</html>
