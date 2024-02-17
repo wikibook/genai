@@ -1,4 +1,4 @@
-![cover](https://wikibook.co.kr/images/cover/s/9791158394851.jpg)
+![cover](./docs/cover.jpg)
 
 # 생성형 AI 업무 혁신
 ### 배워서 바로 쓰는 DeepL, ChatGPT, GPTs, DALL-E 3, GPT-4 Analysis
