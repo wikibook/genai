@@ -9,7 +9,6 @@ function ChatGPTTranslate(cell) {
   const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
   const range = sheet.getRange('B3:D3');
   const apiKey = range.getValue();
-  console.log(apiKey)
 
   if (!apiKey) {
     return "Error: API 키를 설정해주세요."
@@ -18,8 +17,6 @@ function ChatGPTTranslate(cell) {
   if(cell == undefined) {
     return "A6 셀에 번역할 문장을 입력해해주세요.";
   }
-
-  console.log("Origin Text : " + cell)
 
   const apiUrl = "https://api.openai.com/v1/chat/completions";
   
